@@ -1,0 +1,32 @@
+messages:
+  prefix: "[CustomRTP]"
+  yesButton: "[YES]"
+  rtpMessage:
+    - "Teleporting..."
+  rtpMessageVault:
+    - "[RTP]"
+    - "Cost: %rtp_cost%"
+    - "Teleporting? " # Button yes after space
+  noMoney: "Error: you don't have that much money."
+  successfullyTeleported: "Successfully teleported."
+
+rtp:
+  location:
+    radius: 1000 # Radius from the spawn (/setworldspawn)
+    height:
+      min: 60 # from
+      max: 256 # to
+  world: "world" # Name of the world to rtp. In other worlds the command will not work.
+
+
+modules:
+  # Plugin: WorldGuard
+  worldguard:
+    enabled: false
+    denyRtpToRegions: true
+
+  # Plugin: Vault
+  # Will appear in future versions.
+  vault:
+    enabled: false
+    cost: 100.00 # Only double

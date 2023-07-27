@@ -1,0 +1,17 @@
+name: CustomRTP
+version: '${version}'
+main: org.ktilis.customrtp.CustomRTP
+api-version: 1.14
+softdepend: [ WorldGuard ]
+authors: [ Ktilis ]
+commands:
+  rtp:
+    description: A random teleportation command
+    usage: /rtp
+    aliases: randomtp
+    permission: customrtp.rtp # permission for the command "/rtp reload" is "customrtp.reload"
+permissions:
+  customrtp.rtp:
+    default: true
+  customrtp.reload:
+    default: op
